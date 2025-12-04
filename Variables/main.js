@@ -1,13 +1,12 @@
-const isTrue = false;
+let isTrue = false;
 
-const func = () => {
-  if (!isTrue) {
-    var x = 120;
-    console.log(x);
-  } else {
-    isTrue = true;
-    console.log(isTrue);
-  }
+const logger = (logMessage) => {
+  console.log(logMessage);
 };
 
-func();
+const funcX = async () => {
+  var x = 5 * 5 + 1;
+  logger(x);
+};
+
+funcX().then((e) => e);

@@ -1,5 +1,7 @@
 import { main } from "./callbacks.js";
 
+// Example of: Callback functions
+
 const callbacks = (x) => {
   x();
   console.log("Calling Function");
@@ -15,3 +17,9 @@ const getName = (name) => {
 
 getName(names);
 callbacks(main);
+
+// Example of: Anonymous functions
+
+(function () {
+  console.log("Hello World");
+})();

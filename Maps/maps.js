@@ -8,4 +8,5 @@ const mapsFunction = async () => {
   for (const maps of mapValues) {
     console.log(maps);
   }
-};
+
+}
